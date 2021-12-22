@@ -378,7 +378,7 @@
         const phone = $phoneInput.val();
         queryString.set("phone", phone.substring(0, 3) + '****' + phone.substring(7));
         queryString.set("addr", addr);
-        window.location.href = "result.html?" + queryString.toString();
+        window.location.href += "result.html?" + queryString.toString();
       });
     </script>
   </body>
